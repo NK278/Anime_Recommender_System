@@ -1,7 +1,9 @@
 Flask
-pymongo==4.2.0
+pymongo
 seaborn
 ydata-profiling
 scikit-learn
 surprise
--e .
+lightgbm
+# jupyter
+# -e .
