@@ -7,7 +7,7 @@ from src.exception import CustomException
 from src.logger import logging
 from src.utils.Mainutils import MainUtils
 from src.components.data_ingestion import DataIngestion
-from src.components.data_transformation import DataTransformation
+
 
 from sklearn.decomposition import TruncatedSVD
 from sklearn.metrics.pairwise import cosine_similarity
@@ -43,7 +43,6 @@ class Hybrid_Reccomendation:
     def __init__(self):
         self.utils=MainUtils()
         self.data_ing=DataIngestion()
-        self.data_trf=DataTransformation()
         self.content_based=Content_Based_Reccomendation()
         self.hybrid_config=Hybrid_Reccomendation_config()
     
