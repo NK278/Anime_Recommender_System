@@ -5,5 +5,11 @@ ydata-profiling
 scikit-learn
 surprise
 lightgbm
+oauth2client
+beautifulsoup4
+cfscrape
+requests
+wtforms
+regex
 # jupyter
 # -e .
