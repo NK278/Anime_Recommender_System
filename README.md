@@ -68,9 +68,9 @@ Anime-Recommendation-System/
 
 Since some files were too large to push to the repository, they are available for download via Google Drive:
 
-- **Artifacts Folder**: [Download Artifacts]([https://drive.google.com/artifacts_link](https://drive.google.com/drive/folders/1-H8yW2qPYr7XKmpGTi19JoBhwOmlRcYS?usp=drive_link))
-- **Dataset Folder**[: [Download Dataset]([https://drive.google.com/dataset_link](https://drive.google.com/drive/folders/1THfVGnuIOexG8xRRhxzupQqFP0Z1DRUv?usp=drive_link))
-- **Merged Dataset (merged_df.csv)**:[ [Download merged_df.csv](https://drive.google.com/merged_df_csv_link](https://drive.google.com/file/d/10jWy81NVpq00yKN8UJoHWxt54kdS50L-/view?usp=drive_link))
+- **Artifacts Folder**: [Download Artifacts](https://drive.google.com/drive/folders/1-H8yW2qPYr7XKmpGTi19JoBhwOmlRcYS?usp=drive_link)
+- **Dataset Folder**: [Download Dataset](https://drive.google.com/drive/folders/1THfVGnuIOexG8xRRhxzupQqFP0Z1DRUv?usp=drive_link)
+- **Merged Dataset (merged_df.csv)**: [Download merged_df.csv](https://drive.google.com/file/d/10jWy81NVpq00yKN8UJoHWxt54kdS50L-/view?usp=drive_link)
 
 
 ## How It Works
