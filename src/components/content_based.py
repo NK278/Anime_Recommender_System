@@ -7,7 +7,6 @@ from src.exception import CustomException
 from src.logger import logging
 from src.utils.Mainutils import MainUtils
 from src.components.data_ingestion import DataIngestion
-from src.components.data_transformation import DataTransformation
 
 from sklearn.decomposition import TruncatedSVD
 from sklearn.metrics.pairwise import cosine_similarity
@@ -53,7 +52,6 @@ class Content_Based_Reccomendation:
         self.utils=MainUtils()
         self.data_ing=DataIngestion()
         self.content_config=Content_based_config()
-        self.data_trf=DataTransformation()
     
     def profile_create(self):
         try:
