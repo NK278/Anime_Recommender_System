@@ -1,6 +1,4 @@
-Here's a concise yet comprehensive README for your Anime Recommendation System GitHub repository:
 
----
 
 # Anime Recommendation System
 
