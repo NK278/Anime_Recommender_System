@@ -1,97 +1,123 @@
+# Anime Recommendation System  
 
+![Anime Wallpaper](https://images.unsplash.com/photo-1625189659340-887baac3ea32?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)  
+*Unlock a world of anime recommendations tailored to your preferences!*  
 
-# Anime Recommendation System
+An **Anime Recommendation System** designed to provide personalized anime recommendations based on user preferences. The project implements **content-based** and **hybrid recommendation techniques** to enhance accuracy and user satisfaction. Developed with **Streamlit**, the system offers an intuitive and interactive user interface for exploring and discovering anime.
 
-An **Anime Recommendation System** built to recommend anime to users based on their preferences. This project employs **content-based** and **hybrid recommendation techniques** to deliver tailored recommendations. The app is developed with **Streamlit** for an interactive user interface.
+---
 
-## Project Structure
+## 📂 Project Structure  
 
 ```
-Anime-Recommendation-System/
-│
-├── app.py                     # Streamlit app to interact with the recommendation system
-├── requirements.txt           # Python dependencies
-├── setup.py                   # Package setup file
-│
-├── src/                       # Core source code
-│   ├── components/            # Modular code for data ingestion, transformation, and recommendation logic
-│   ├── constant/              # Definitions of reusable constants
-│   ├── pipelines/             # Training pipeline implementation
-│   ├── utils/                 # Utility functions and helper methods
-│   └── exception.py, logger.py # Custom exception handling and logging
-│
-├── notebooks/                 # Jupyter notebooks for experimentation and model training
-│   ├── EDA.ipynb              # Exploratory Data Analysis
-│   ├── Model_Trainer.ipynb    # Model training and evaluation
-│   └── merged_df.csv          # Dataset generated after preprocessing
-│
-├── artifacts/                 # Intermediate and final outputs (models, processed data)
-│   ├── genre_vectorizer.pkl   # Genre vectorizer for content-based filtering
-│   ├── knn_baseline_pred_dict.pkl # KNN model predictions
-│   ├── user_profile.pkl       # User profiles
-│   └── [Other artifacts]      # Pickled objects and data files for recommendation
-│
-├── logs/                      # Logs generated during execution
-├── dist/                      # Distribution files for deployment
-├── Dataset/                   # Original and preprocessed datasets
-│   └── data/                  # CSV files of cleaned anime and user data
-└── README.md                  # Project documentation
+Anime-Recommendation-System/  
+│  
+├── app.py                     # Streamlit app entry point  
+├── requirements.txt           # Python dependencies  
+├── setup.py                   # Project packaging and installation  
+│  
+├── src/                       # Core source code  
+│   ├── components/            # Modular code for data ingestion, transformation, and recommendation logic  
+│   ├── constant/              # Definitions of reusable constants  
+│   ├── pipelines/             # Model training pipeline  
+│   ├── utils/                 # Utility functions and helpers  
+│   └── exception.py, logger.py # Custom exception handling and logging  
+│  
+├── notebooks/                 # Jupyter notebooks for experimentation  
+│   ├── EDA.ipynb              # Exploratory Data Analysis  
+│   ├── Model_Trainer.ipynb    # Model training and evaluation  
+│   └── merged_df.csv          # Final preprocessed dataset  
+│  
+├── artifacts/                 # Intermediate and final outputs (models, processed data)  
+│   ├── genre_vectorizer.pkl   # Genre vectorizer for content-based filtering  
+│   ├── knn_baseline_pred_dict.pkl # KNN model predictions  
+│   ├── user_profile.pkl       # User profiles for recommendations  
+│   └── [Other artifacts]      # Additional serialized objects and data files  
+│  
+├── logs/                      # Execution logs  
+├── dist/                      # Distribution files for deployment  
+├── Dataset/                   # Original and preprocessed datasets  
+│   └── data/                  # Raw and cleaned datasets  
+└── README.md                  # Project documentation  
 ```
 
-## Features
+---
 
-1. **Interactive Web App**: Built using Streamlit, allowing users to:
-   - Explore anime datasets.
-   - Get personalized recommendations.
-2. **Hybrid Recommendation**: Combines content-based filtering with collaborative techniques for better accuracy.
-3. **Data Pipeline**:
-   - Preprocessing anime and user data (handled in `src/components/data_ingestion.py`).
-   - Generating user and content profiles.
-   - Training recommendation models.
+## 🎯 Features  
 
-## Installation
+### 1. **Interactive Web Application**  
+   - Built using **Streamlit**, allowing users to:  
+     - Browse and explore the anime dataset.  
+     - Receive personalized anime recommendations.  
+   
+### 2. **Hybrid Recommendation Engine**  
+   - Combines **content-based filtering** (e.g., genre vectorization) with **collaborative techniques** (e.g., user-item interaction) for enhanced accuracy.  
+   
+### 3. **Comprehensive Data Pipeline**  
+   - Automated ingestion and preprocessing of anime and user data (`src/components/data_ingestion.py`).  
+   - Profile generation for users and content.  
+   - Training and evaluation of recommendation models.  
 
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/NK278/Anime-Recommendation-System.git](https://github.com/NK278/Anime_Recommender_System/tree/)
-   cd Anime-Recommendation-System
-   ```
-2. Install dependencies:
-   ```bash
-   python setup.py install
-   ```
-3. Run the Streamlit app:
-   ```bash
-   streamlit run app.py
-   ```
-## External Downloads
+---
 
-Since some files were too large to push to the repository, they are available for download via Google Drive:
+## 🚀 Installation Guide  
 
-- **Artifacts Folder**: [Download Artifacts](https://drive.google.com/drive/folders/1-H8yW2qPYr7XKmpGTi19JoBhwOmlRcYS?usp=drive_link)
-- **Dataset Folder**: [Download Dataset](https://drive.google.com/drive/folders/1THfVGnuIOexG8xRRhxzupQqFP0Z1DRUv?usp=drive_link)
-- **Merged Dataset (merged_df.csv)**: [Download merged_df.csv](https://drive.google.com/file/d/10jWy81NVpq00yKN8UJoHWxt54kdS50L-/view?usp=drive_link)
+### Step 1: Clone the Repository  
+```bash  
+git clone https://github.com/NK278/Anime-Recommendation-System.git  
+cd Anime-Recommendation-System  
+```  
 
+### Step 2: Install Dependencies  
+```bash  
+python setup.py install  
+```  
 
-## How It Works
+### Step 3: Run the Streamlit App  
+```bash  
+streamlit run app.py  
+```  
 
-- **EDA and Model Training**:
-  - Conducted in Jupyter notebooks (`notebooks/EDA.ipynb` and `notebooks/Model_Trainer.ipynb`).
-  - Generates a processed dataset (`merged_df.csv`) for training.
-  
-- **Recommendation Engine**:
-  - Uses `src/components/` for data ingestion and transformation.
-  - Builds content profiles using vectorizers like `genre_vectorizer.pkl`.
-  - Employs a hybrid approach combining content-based and collaborative filtering.
+---
 
-- **Streamlit App**:
-  - Provides an interface for users to search and explore anime recommendations.
+## 📥 External Downloads  
 
-## Contributing
+Certain files are too large to store in the repository. They can be downloaded from the following links:  
 
-Contributions are welcome! Feel free to submit issues or pull requests for enhancements or bug fixes.
+1. **Artifacts Folder**: [Download Artifacts](https://drive.google.com/drive/folders/1-H8yW2qPYr7XKmpGTi19JoBhwOmlRcYS?usp=drive_link)  
+2. **Dataset Folder**: [Download Dataset](https://drive.google.com/drive/folders/1THfVGnuIOexG8xRRhxzupQqFP0Z1DRUv?usp=drive_link)  
+3. **Merged Dataset (`merged_df.csv`)**: [Download merged_df.csv](https://drive.google.com/file/d/10jWy81NVpq00yKN8UJoHWxt54kdS50L-/view?usp=drive_link)  
 
-## License
+---
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## ⚙️ How It Works  
 
+### **1. Data Exploration and Model Training**  
+- Conducted in Jupyter notebooks (`notebooks/EDA.ipynb` and `notebooks/Model_Trainer.ipynb`).  
+- Produces a preprocessed dataset (`merged_df.csv`) for model training.  
+
+### **2. Recommendation Engine**  
+- Implements **content-based filtering** using vectorizers (e.g., `genre_vectorizer.pkl`).  
+- Integrates **collaborative filtering** to enhance recommendations.  
+- Encapsulates all logic within `src/components/`.  
+
+### **3. Streamlit Interface**  
+- Provides a user-friendly interface for:  
+  - Searching anime by name or genre.  
+  - Viewing tailored recommendations.  
+
+---
+
+## 🤝 Contributing  
+
+We welcome contributions to enhance the Anime Recommendation System. Feel free to:  
+- Submit issues for bugs or feature requests.  
+- Open pull requests with improvements or fixes.  
+
+---
+
+## 📜 License  
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.  
+
+---  
